@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
   <head>
     <!-- <title>Ana Female Boxing Coach</title> -->
-    <meta charset="utf-8">
+    <meta <?php bloginfo('charset'); ?>>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
 
+    <title>
+      <?php bloginfo('name'); ?> ｜ 
+      <?php is_front_page() ? bloginfo('description') : wp_title(); ?>
+      </title>
 
   <?php wp_head(); ?>
-  
-<!--     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+<!--     
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -25,11 +30,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -83,8 +88,8 @@
             <div class="row align-items-center">
               <div class="col-2">
                 <h2 class="mb-0 site-logo">
-                  <a href="index.html" class="navbar-brand">
-                    <img src="images/logo.png" alt="ana boxing coach logo">
+                  <a href="index.php" class="navbar-brand">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="female boxing coach">
                   </a>
                 </h2>
               </div>

@@ -1,5 +1,8 @@
 <?php
 
+// Enables admin support to add images
+add_theme_support('post-thumbnails');
+
 function ana_theme_styles() {
 
 	wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/css/bootstrap/bootstrap.css');

@@ -1,3 +1,14 @@
+/*
+Theme Name: Female Boxing Coach
+Theme URI: https://www.femaleboxingcoach.com/
+Author: Christine Trant
+Author URI: http://www.christinetrant.com
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: female boxing coach
+Tags: boxing coach, london boxing, 
+*/
+
 /* Base */
 html {
   scroll-behavior: smooth;
@@ -152,7 +163,7 @@ a {
 
 .bg-image {
   background-size: cover;
-  background-repeat: no-rpeeat;
+  background-repeat: no-repeat;
   overflow: hidden;
   background-position: center center; }
   .bg-image.center {
@@ -466,10 +477,9 @@ a {
 
 /* Blocks */
 .site-blocks-cover {
-    font-family: 'Zappat', sans-serif; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; 
+  font-family: 'Zappat', sans-serif; 
+  background: url('images/bg.jpg') no-repeat center center; 
+  background-size: cover; 
   }
   .site-blocks-cover.overlay {
     position: relative; }
