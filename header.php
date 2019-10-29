@@ -12,22 +12,6 @@
       </title>
 
   <?php wp_head(); ?>
-<!--     
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/aos.css"> -->
-
-    <!-- FONTS -->
-<!--     <link rel="stylesheet" href="fonts/zappat/style.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">    
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> -->    
-
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-touch-icon.png">
@@ -94,12 +78,14 @@
                 </h2>
               </div>
               <div class="col-10">
-                <nav class="site-navigation text-right">
+                 <nav class="site-navigation text-right">
                   <div class="container">
-                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div> 
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto">
+                      <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a>
+                    </div> 
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
-                      <li class="active">
+                      <!-- <li class="active">
                         <a href="index.html">Home</a>
                       </li>
                       <li><a href="about.html">About</a></li>
@@ -107,10 +93,30 @@
                       <li><a href="index.html#schedule">Schedule</a></li>
                       <li><a href="index.html#testimonials">Testimonials</a></li>
                       <li><a href="gallery.html">Gallery</a></li>
-                      <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
+                      <li><a href="index.html#contact">Contact</a></li> -->
+                    
+
+
+                    <?php
+                    wp_nav_menu( array(
+                      'theme_location' => 'menu-1',
+                      'menu_id'        => 'primary-menu',
+                      'container'      => false,
+                      'depth'          => 2,
+                      'menu_class'     => 'navbar-nav ml-auto li',
+                      'walker'         => new Bootstrap_NavWalker(),
+                      'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
+                    ) );
+                    ?>
+
+                    </ul> 
+
                   </div>
-                </nav>
+                </nav>    
+
+                
+
+
               </div>
             </div>
           </div>

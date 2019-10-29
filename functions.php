@@ -1,5 +1,11 @@
 <?php
 
+// navalker - to enable bootstrap dropdown menu
+require get_template_directory() . '/bootstrap-navwalker.php';
+
+register_nav_menus( array(
+    'menu-1' => esc_html__( 'Primary', 'theme-textdomain' ),
+) );
 // Enables admin support to add images
 add_theme_support('post-thumbnails');
 
