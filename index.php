@@ -71,7 +71,7 @@
     <!-- ==================== -->
     <!-- ===   SCHEDULE   === -->
     <!-- ==================== -->
-    <div class="block-schedule overlay site-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-23.jpg');">
+    <div class="block-schedule overlay site-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-19.jpg');">
       <div class="container">
 
         <h1 id="schedule" class="mb-3 text-uppercase"><strong class="text-white font-weight-bold">Schedule</strong></h1>
