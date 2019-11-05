@@ -1,6 +1,6 @@
 <?php
 
-// navalker - to enable bootstrap dropdown menu
+// navalker - to enable bootstrap dropdown menu & navbar
 require get_template_directory() . '/bootstrap-navwalker.php';
 
 register_nav_menus( array(
@@ -42,6 +42,60 @@ function ana_theme_js() {
 	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true );
 }
 add_action('wp_enqueue_scripts', 'ana_theme_js');
+
+//Widget Locations
+function ana_widgets($id) {
+	//About Ana text widget
+	register_sidebar(array(
+		'name'	=> 'About',
+		'id'	=> 'about',
+		'before_widget'	=> '<div class="row align-items-center">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<div class="col-md-12 col-lg-5 mb-5 mb-lg-0">',
+		'after_title'	=>	'</div>'
+	));
+	//About Ana photo widget
+	register_sidebar(array(
+		'name'	=> 'AboutPhoto',
+		'id'	=> 'about_photo',
+		'before_widget'	=> '<div class="row align-items-center">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<div class="col-md-12 col-lg-6 ml-auto">',
+		'after_title'	=>	'</div>'
+	));
+
+	//Classes left text widget
+	register_sidebar(array(
+		'name'	=> 'Class1',
+		'id'	=> 'class1',
+		'before_widget'	=> '<div class="row align-items-center">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
+		'after_title'	=>	'</div>'
+	));
+	//About Ana photo widget
+	register_sidebar(array(
+		'name'	=> 'Class2',
+		'id'	=> 'class2',
+		'before_widget'	=> '<div class="row align-items-center">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
+		'after_title'	=>	'</div>'
+	));
+	//Classes right text widget
+	register_sidebar(array(
+		'name'	=> 'Class3',
+		'id'	=> 'class3',
+		'before_widget'	=> '<div class="row align-items-center">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
+		'after_title'	=>	'</div>'
+	));
+
+
+}
+add_action('widgets_init', 'ana_widgets');
+
 
 
 ?>

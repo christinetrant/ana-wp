@@ -19,13 +19,18 @@
         <div class="row align-items-center">
           <div class="col-md-12 col-lg-5 mb-5 mb-lg-0">
             <h1 class="mb-3 text-uppercase"><strong class="text-primary font-weight-bold">About Ana</strong></h1>
-            
-            <p class="mb-4">I am a passionate and dedicated level 2 England boxing coach, level 3 personal trainer. A coach who smashes barriers, Inclusion is key Deaf clients welcome qualified level 2 British Sign Language (BSL) and LGBT women welcome.</p>
-            
-            <p><a href="about.html" class="btn btn-primary pill px-4">Find Out More</a></p>
+            <!-- <p class="mb-4">
+            I am a passionate and dedicated level 2 England boxing coach, level 3 personal trainer &amp; qualified in level 2 British Sign Language (BSL).  LGBT women &amp; deaf clients are welcome. I am a coach who smashes barriers and believes that inclusion is key.</p>-->
+            <p><a href="about.html" class="btn btn-primary pill px-4">Find Out More</a></p> 
+            <?php if(is_active_sidebar('about')) : ?>
+              <?php dynamic_sidebar('about'); ?>
+            <?php endif; ?>
           </div>
           <div class="col-md-12 col-lg-6 ml-auto">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-12.jpg" alt="Image" class="img-fluid">
+            <!-- <img src="<?php //echo get_template_directory_uri(); ?> /images/gallery/boxing-12.jpg" alt="Image" class="img-fluid"> -->
+            <?php if(is_active_sidebar('about_photo')) : ?>
+              <?php dynamic_sidebar('about_photo'); ?>
+            <?php endif; ?>
           </div>
         </div>
       </div>
@@ -36,34 +41,34 @@
     <!-- =================== -->
     <div class="site-section block-13">
       <div class="container">
-       <!--
-        <div class="heading-with-border">
-          <h2 class="heading text-uppercase">Featured Class</h2>
-        </div>
-        -->
         <h1 class="mb-3 text-uppercase"><strong class="text-primary font-weight-bold">Featured Classes</strong></h1>
 
         <div class="row align-items-center">
           <div class="heading-with-border bg-white col-md-12 col-lg-4">
-            <p class="lead">Boxing Babes</p>
+            <!-- <p class="lead">Boxing Babes</p>
             <p class="mb-4">A full body workout. Learn defences, combinations, footwork and pad work. Sessions are focused on fitness and partner work, helping you build confidence, make friends, and strengthen your body and mind.</p>
-            <p>All abilities and fitness levels welcome!</p>
-            <!-- <p><a href="#" class="btn btn-primary pill px-4">More info</a></p> -->
+            <p>All abilities and fitness levels welcome!</p> -->
+            <?php if(is_active_sidebar('class1')) : ?>
+              <?php dynamic_sidebar('class1'); ?>
+            <?php endif; ?>
           </div>
 
           <div class="heading-with-border bg-white col-md-12 col-lg-4">
-          <!-- <div class="col-md-12 col-lg-4 ml-auto"> -->
-            <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-18.jpg" alt="Image" class="img-fluid">
+            <!-- <img src="<?php //echo get_template_directory_uri(); ?>/images/gallery/boxing-18.jpg" alt="Image" class="img-fluid"> -->
+            <?php if(is_active_sidebar('class2')) : ?>
+              <?php dynamic_sidebar('class2'); ?>
+            <?php endif; ?>
           </div>
           
           <div class="heading-with-border bg-white col-md-12 col-lg-4">
-          <!-- <div class="col-md-12 col-lg-4"> -->
-            <p class="lead">Boom Box</p>
-            <p class="mb-4">Recreational boxing or This Fitness/Boxfit session is for women of all sizes, abilities and fitness levels. A full body workout. Learn defences, combinations, footwork and partner work with pads whilst getting fit. At these sessions you get to learn the ropes of boxing, have fun whilst you exercise.</p>
-            <p>Please bring your own gloves if you have, limited pairs available.</p>
+            <!-- <p class="lead">Boom Box</p>
+            <p class="mb-4">Recreational boxing for women of all sizes, abilities and fitness levels. A full body workout which includes defences, combinations, footwork and partner work with pads whilst getting fit. At these sessions you get to learn the ropes of boxing and have fun whilst you exercise.</p>
+            <p>Please bring your own gloves if you have, limited pairs available.</p> -->
+            <?php if(is_active_sidebar('class3')) : ?>
+              <?php dynamic_sidebar('class3'); ?>
+            <?php endif; ?>
             <p><a href="classes.html" class="btn btn-primary pill px-4">More Classes</a></p>
-          <!-- </div> -->
-        </div>
+          </div>
         </div>
       </div>
     </div>

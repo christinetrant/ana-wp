@@ -103,7 +103,7 @@
                       'menu_id'        => 'primary-menu',
                       'container'      => false,
                       'depth'          => 2,
-                      'menu_class'     => 'navbar-nav ml-auto li',
+                      'menu_class'     => 'navbar-nav ml-auto site-menu js-clone-nav d-none d-lg-block',
                       'walker'         => new Bootstrap_NavWalker(),
                       'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
                     ) );
