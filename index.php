@@ -7,8 +7,10 @@
       <div class="container">
         <div class="row align-items-end justify-content-center">
           <div class="col-md-10 text-right end-pad" data-aos="fade">
-            <p>For Women, By Women </p>
-            <h1><strong>Women&#39;s <br> Recreational <br>Boxing</strong></h1>
+            <p><?php echo get_theme_mod('showcase_text', 'For Women, By Women'); ?></p>
+            <h1><strong><?php echo get_theme_mod('showcase_heading', 'Women&#39;s <br> Recreational <br>Boxing'); ?></strong></h1>
+            <!-- <p>For Women, By Women </p> -->
+            <!-- <h1><strong>Women&#39;s <br> Recreational <br>Boxing</strong></h1> -->
           </div>
         </div>
       </div>
@@ -19,18 +21,18 @@
         <div class="row align-items-center">
           <div class="col-md-12 col-lg-5 mb-5 mb-lg-0">
             <h1 class="mb-3 text-uppercase"><strong class="text-primary font-weight-bold">About Ana</strong></h1>
-            <!-- <p class="mb-4">
-            I am a passionate and dedicated level 2 England boxing coach, level 3 personal trainer &amp; qualified in level 2 British Sign Language (BSL).  LGBT women &amp; deaf clients are welcome. I am a coach who smashes barriers and believes that inclusion is key.</p>-->
-            <p><a href="about.html" class="btn btn-primary pill px-4">Find Out More</a></p> 
-            <?php if(is_active_sidebar('about')) : ?>
-              <?php dynamic_sidebar('about'); ?>
-            <?php endif; ?>
+            <p class="mb-4"><?php echo get_theme_mod('about_text', 'I am a passionate and dedicated level 2 England boxing coach, level 3 personal trainer &amp; qualified in level 2 British Sign Language (BSL).  LGBT women &amp; deaf clients are welcome. I am a coach who smashes barriers and believes that inclusion is key.'); ?></p>
+            <!--  <?php //if(is_active_sidebar('about')) : ?>
+              <?php //dynamic_sidebar('about'); ?>
+            <?php //endif; ?> -->
+
+            <p><a href="<?php echo get_theme_mod('about_btn', 'http://google.com'); ?>" class="btn btn-primary pill px-4"><?php echo get_theme_mod('about_btn_text', 'Find Out More'); ?></a></p> 
           </div>
           <div class="col-md-12 col-lg-6 ml-auto">
-            <!-- <img src="<?php //echo get_template_directory_uri(); ?> /images/gallery/boxing-12.jpg" alt="Image" class="img-fluid"> -->
-            <?php if(is_active_sidebar('about_photo')) : ?>
-              <?php dynamic_sidebar('about_photo'); ?>
-            <?php endif; ?>
+            <img src="<?php echo get_theme_mod('about_image', get_bloginfo('template_url') .'/images/gallery/boxing-12.jpg'); ?>" alt="Image" class="img-fluid">
+            <!-- <?php //if(is_active_sidebar('about_photo')) : ?>
+              <?php //dynamic_sidebar('about_photo'); ?>
+            <?php //endif; ?> -->
           </div>
         </div>
       </div>
@@ -45,29 +47,18 @@
 
         <div class="row align-items-center">
           <div class="heading-with-border bg-white col-md-12 col-lg-4">
-            <!-- <p class="lead">Boxing Babes</p>
-            <p class="mb-4">A full body workout. Learn defences, combinations, footwork and pad work. Sessions are focused on fitness and partner work, helping you build confidence, make friends, and strengthen your body and mind.</p>
-            <p>All abilities and fitness levels welcome!</p> -->
-            <?php if(is_active_sidebar('class1')) : ?>
-              <?php dynamic_sidebar('class1'); ?>
-            <?php endif; ?>
+            <p class="lead"><?php echo get_theme_mod('featured_left_heading', 'Boxing Babes'); ?></p>
+            <p class="mb-4"><?php echo get_theme_mod('featured_left_text', 'A full body workout. Learn defences, combinations, footwork and pad work. Sessions are focused on fitness and partner work, helping you build confidence, make friends, and strengthen your body and mind.<br>All abilities and fitness levels welcome!'); ?></p>
           </div>
 
           <div class="heading-with-border bg-white col-md-12 col-lg-4">
-            <!-- <img src="<?php //echo get_template_directory_uri(); ?>/images/gallery/boxing-18.jpg" alt="Image" class="img-fluid"> -->
-            <?php if(is_active_sidebar('class2')) : ?>
-              <?php dynamic_sidebar('class2'); ?>
-            <?php endif; ?>
+            <img src="<?php echo get_theme_mod('featured_class_image', get_bloginfo('template_url') .'/images/gallery/boxing-18.jpg'); ?>" alt="Image" class="img-fluid">
           </div>
           
           <div class="heading-with-border bg-white col-md-12 col-lg-4">
-            <!-- <p class="lead">Boom Box</p>
-            <p class="mb-4">Recreational boxing for women of all sizes, abilities and fitness levels. A full body workout which includes defences, combinations, footwork and partner work with pads whilst getting fit. At these sessions you get to learn the ropes of boxing and have fun whilst you exercise.</p>
-            <p>Please bring your own gloves if you have, limited pairs available.</p> -->
-            <?php if(is_active_sidebar('class3')) : ?>
-              <?php dynamic_sidebar('class3'); ?>
-            <?php endif; ?>
-            <p><a href="classes.html" class="btn btn-primary pill px-4">More Classes</a></p>
+            <p class="lead"><?php echo get_theme_mod('featured_right_heading', 'Boom Box'); ?></p>
+            <p class="mb-4"><?php echo get_theme_mod('featured_right_text', 'Recreational boxing for women of all sizes, abilities and fitness levels. A full body workout which includes defences, combinations, footwork and partner work with pads whilst getting fit. At these sessions you get to learn the ropes of boxing and have fun whilst you exercise.<br>Please bring your own gloves if you have, limited pairs available.'); ?></p>
+            <p><a href="<?php echo get_theme_mod('featured_btn', 'http://google.com'); ?>" class="btn btn-primary pill px-4"><?php echo get_theme_mod('featured_btn_text', 'More Classes'); ?></a></p>
           </div>
         </div>
       </div>
@@ -84,40 +75,47 @@
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-sunday" role="tabpanel">
           </div>
-          
+          <!-- Row 1 -->
           <div class="row-wrap">
             <div class="row bg-white p-4 align-items-center">
-              <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5">Boxing Babes</h3></div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-clock-o mr-3"></span>10:00am - 11:00am</div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-calendar mr-3"></span> 2nd & 4th Saturday of each month</div>     
-              </div>
+              <!-- <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5">Boxing Babes</h3></div> -->
+              <?php if(is_active_sidebar('pill1a')) : ?>
+                <?php dynamic_sidebar('pill1a'); ?>
+              <?php endif; ?>
+
+              <!-- <div class="col-sm-4 col-md-4 col-lg-4"><p><span class="icon-clock-o mr-3"></span>10:00am - 11:00am</p></div> -->
+              <?php if(is_active_sidebar('pill1b')) : ?>
+                <?php dynamic_sidebar('pill1b'); ?>
+              <?php endif; ?>
+              
+              <!-- <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-calendar mr-3"></span>2nd & 4th Saturday of each month</div> -->
+              <?php if(is_active_sidebar('pill1c')) : ?>
+                <?php dynamic_sidebar('pill1c'); ?>
+              <?php endif; ?>
+                 
             </div>
-            <!-- Row 1 -->
-            <div class="row-wrap">
-              <div class="row bg-white p-4 align-items-center">
-                <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5">BoomBox</h3></div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-clock-o mr-3"></span>7pm-8pm</div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-calendar mr-3"></span> Tuesdays</div>
-              </div>
+          </div>
+          <!-- Row 2 -->
+          
+          <!-- <div class="row-wrap">
+            <div class="row bg-white p-4 align-items-center">
+              <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5">BoomBox</h3></div>
+              <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-clock-o mr-3"></span>7pm-8pm</div>
+              <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-calendar mr-3"></span> Tuesdays</div>
             </div>
-            <!-- Row 2 -->
-            <div class="row-wrap">
-              <div class="row bg-white p-4 align-items-center">
-                <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5"></h3></div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="classes.html" class="btn btn-primary pill px-4 mt-3 mt-md-0">More info</a></div>
-                <div class="col-sm-4 col-md-4 col-lg-4"></div>
-              </div>
+          </div> -->
+          <!-- Button -->
+          <div class="row-wrap">
+            <div class="row bg-white p-4 align-items-center">
+              <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5"></h3></div>
+              <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="classes.html" class="btn btn-primary pill px-4 mt-3 mt-md-0">More info</a></div>
+              <div class="col-sm-4 col-md-4 col-lg-4"></div>
             </div>
+          </div>
 
           </div>
-          
         </div>
-
-        
-
-      </div>      
-
-
+      </div>
 
     <!-- ======================== -->
     <!-- ===   TESTIMONIALS   === -->
@@ -185,28 +183,28 @@
     <h1 class="mb-3 text-uppercase"><strong class="text-white font-weight-bold">Gallery</strong></h1>
     <div class="row no-gutters">
       <div class="col-lg-3 col-md-6">
-        <a href="<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-9.jpg" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-9.jpg);">
+        <a href="<?php echo get_theme_mod('homegallery_image1', get_bloginfo('template_url') .'/images/gallery/boxing-9.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_theme_mod('homegallery_image1', get_bloginfo('template_url') .'/images/gallery/boxing-9.jpg'); ?>);">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
             <span class="icon-search"></span>
           </div>
         </a>
       </div>
       <div class="col-lg-3 col-md-6">
-        <a href="<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-8.jpg" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-8.jpg);">
+        <a href="<?php echo get_theme_mod('homegallery_image2', get_bloginfo('template_url') .'/images/gallery/boxing-8.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_theme_mod('homegallery_image2', get_bloginfo('template_url') .'/images/gallery/boxing-8.jpg'); ?>);">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
             <span class="icon-search"></span>
           </div>
         </a>
       </div>
       <div class="col-lg-3 col-md-6">
-        <a href="<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-13.jpg" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-13.jpg);">
+        <a href="<?php echo get_theme_mod('homegallery_image3', get_bloginfo('template_url') .'/images/gallery/boxing-13.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_theme_mod('homegallery_image3', get_bloginfo('template_url') .'/images/gallery/boxing-13.jpg'); ?>);">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
             <span class="icon-search"></span>
           </div>
         </a>
       </div>
       <div class="col-lg-3 col-md-6">
-        <a href="<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-14.jpg" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/gallery/boxing-14.jpg);">
+        <a href="<?php echo get_theme_mod('homegallery_image4', get_bloginfo('template_url') .'/images/gallery/boxing-14.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_theme_mod('homegallery_image4', get_bloginfo('template_url') .'/images/gallery/boxing-14.jpg'); ?>);">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
             <span class="icon-search"></span>
           </div>
@@ -226,7 +224,7 @@
       <!-- GOOGLE MAP -->
       <div class="col-md-6 d-flex align-self-stretch">
         <!-- <div id="map"></div> -->
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4702975670543!2d-0.09762168469176209!3d51.50458731873055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604a40aacba9d%3A0xdcf1b63decd0f0c6!2sThe%20Bridge!5e0!3m2!1sen!2suk!4v1571583457303!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>    
+        <iframe id="map" src="<?php echo get_theme_mod('map_link', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4702975670543!2d-0.09762168469176209!3d51.50458731873055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604a40aacba9d%3A0xdcf1b63decd0f0c6!2sThe%20Bridge!5e0!3m2!1sen!2suk!4v1571583457303!5m2!1sen!2suk'); ?>" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>    
       </div>
         
       <div class="col-md-6 appointment ftco-animate">

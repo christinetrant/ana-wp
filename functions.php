@@ -46,56 +46,85 @@ add_action('wp_enqueue_scripts', 'ana_theme_js');
 //Widget Locations
 function ana_widgets($id) {
 	//About Ana text widget
-	register_sidebar(array(
-		'name'	=> 'About',
-		'id'	=> 'about',
-		'before_widget'	=> '<div class="row align-items-center">',
-		'after_widget'	=> '</div>',
-		'before_title'	=> '<div class="col-md-12 col-lg-5 mb-5 mb-lg-0">',
-		'after_title'	=>	'</div>'
-	));
+	// register_sidebar(array(
+	// 	'name'	=> 'About Ana Section - Text',
+	// 	'id'	=> 'about',
+	// 	'before_widget'	=>	'<div class="col-md-12 col-lg-5 mb-5 mb-lg-0">',
+	// 	'after_widget'	=>	'</div>',
+	// 	'before_title'	=>	'<h1>',
+	// 	'after_title'	=>	'</h1>'
+	// ));
 	//About Ana photo widget
-	register_sidebar(array(
-		'name'	=> 'AboutPhoto',
-		'id'	=> 'about_photo',
-		'before_widget'	=> '<div class="row align-items-center">',
-		'after_widget'	=> '</div>',
-		'before_title'	=> '<div class="col-md-12 col-lg-6 ml-auto">',
-		'after_title'	=>	'</div>'
-	));
+	// register_sidebar(array(
+	// 	'name'	=> 'About Ana Section - Photo',
+	// 	'id'	=> 'about_photo',
+	// 	'before_widget'	=> '<div class="col-md-12 col-lg-6 ml-auto">',
+	// 	'after_widget'	=> '</div>',
+	// 	'before_title'	=> '<img',
+	// 	'after_title'	=>	'>'
+	// ));
 
 	//Classes left text widget
 	register_sidebar(array(
-		'name'	=> 'Class1',
+		'name'	=> 'Class Section - Left',
 		'id'	=> 'class1',
-		'before_widget'	=> '<div class="row align-items-center">',
+		'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
 		'after_widget'	=> '</div>',
-		'before_title'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
-		'after_title'	=>	'</div>'
+		'before_title'	=> '<p>',
+		'after_title'	=>	'</p>'
 	));
 	//About Ana photo widget
 	register_sidebar(array(
-		'name'	=> 'Class2',
+		'name'	=> 'Class Section - Middle',
 		'id'	=> 'class2',
-		'before_widget'	=> '<div class="row align-items-center">',
+		'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
 		'after_widget'	=> '</div>',
-		'before_title'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
-		'after_title'	=>	'</div>'
+		'before_title'	=> '<img',
+		'after_title'	=>	'>'
 	));
 	//Classes right text widget
 	register_sidebar(array(
-		'name'	=> 'Class3',
+		'name'	=> 'Class Section - Right',
 		'id'	=> 'class3',
-		'before_widget'	=> '<div class="row align-items-center">',
+		'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
 		'after_widget'	=> '</div>',
-		'before_title'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
-		'after_title'	=>	'</div>'
+		'before_title'	=> '<p>',
+		'after_title'	=>	'</p>'
 	));
 
+
+	//Pill1 text widget
+	register_sidebar(array(
+		'name'	=> 'Schedule Left - Title',
+		'id'	=> 'pill1a',
+		'before_widget'	=> '<div class="col-sm-4 col-md-4 col-lg-4">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<h3">',
+		'after_title'	=>	'</h3>'
+	));
+	//Pill1 text widget
+	register_sidebar(array(
+		'name'	=> 'Schedule Middle - Time',
+		'id'	=> 'pill1b',
+		'before_widget'	=> '<div class="col-sm-4 col-md-4 col-lg-4">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<p>',
+		'after_title'	=>	'</p>'
+	));
+	//Pill1 text widget
+	register_sidebar(array(
+		'name'	=> 'Schedule Right - Days',
+		'id'	=> 'pill1c',
+		'before_widget'	=> '<div class="col-sm-4 col-md-4 col-lg-4">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<p>',
+		'after_title'	=>	'</p>'
+	));
 
 }
 add_action('widgets_init', 'ana_widgets');
 
-
+//Customiser File
+require get_template_directory() . '/inc/customizer.php';
 
 ?>
