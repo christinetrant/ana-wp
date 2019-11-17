@@ -1,4 +1,4 @@
-<?php /* Template Name: CLasses */ ?>
+<?php /* Template Name: Classes */ ?>
 
   <?php get_header(); ?>
 

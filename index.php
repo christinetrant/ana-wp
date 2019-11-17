@@ -124,7 +124,7 @@
 
       <div class="container">
         <h1 class="mb-3 text-uppercase"><strong class="text-primary font-weight-bold">Testimonials</strong></h1>
-        <!-- Plugin link: http://localhost/wordpress/wp-admin/plugin-install.php?tab=plugin-information&plugin=strong-testimonials&TB_iframe=true&width=600&height=550 -->
+        <!-- Plugin link: https://wordpress.org/plugins/strong-testimonials/ -->
         <?php echo do_shortcode( '[testimonial_view id="1"]' ) ?>
         
         <!-- <div class="nonloop-block-14 owl-carousel"> -->
@@ -184,36 +184,44 @@
 <section class="ftco-gallery site-section py-5 block-13">
   <div class="container">
     <h1 class="mb-3 text-uppercase"><strong class="text-white font-weight-bold">Gallery</strong></h1>
+    <!-- Plugin link: https://wordpress.org/plugins/wp-bootstrap-gallery/ -->
     <div class="row no-gutters">
+
+    <!-- <?php //echo do_shortcode( '[wpbgallery id=125]' ) ?> -->
+    <?php echo do_shortcode( '[foogallery id="126"]' ) ?>
+  </div>
+
+    <!-- <div class="row no-gutters">
       <div class="col-lg-3 col-md-6">
-        <a href="<?php echo get_theme_mod('homegallery_image1', get_bloginfo('template_url') .'/images/gallery/boxing-9.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_theme_mod('homegallery_image1', get_bloginfo('template_url') .'/images/gallery/boxing-9.jpg'); ?>);">
+        <a href="<?php //echo get_theme_mod('homegallery_image1', get_bloginfo('template_url') .'/images/gallery/boxing-9.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php //echo get_theme_mod('homegallery_image1', get_bloginfo('template_url') .'/images/gallery/boxing-9.jpg'); ?>);">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
             <span class="icon-search"></span>
           </div>
         </a>
       </div>
       <div class="col-lg-3 col-md-6">
-        <a href="<?php echo get_theme_mod('homegallery_image2', get_bloginfo('template_url') .'/images/gallery/boxing-8.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_theme_mod('homegallery_image2', get_bloginfo('template_url') .'/images/gallery/boxing-8.jpg'); ?>);">
+        <a href="<?php //echo get_theme_mod('homegallery_image2', get_bloginfo('template_url') .'/images/gallery/boxing-8.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php //echo get_theme_mod('homegallery_image2', get_bloginfo('template_url') .'/images/gallery/boxing-8.jpg'); ?>);">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
             <span class="icon-search"></span>
           </div>
         </a>
       </div>
       <div class="col-lg-3 col-md-6">
-        <a href="<?php echo get_theme_mod('homegallery_image3', get_bloginfo('template_url') .'/images/gallery/boxing-13.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_theme_mod('homegallery_image3', get_bloginfo('template_url') .'/images/gallery/boxing-13.jpg'); ?>);">
+        <a href="<?php //echo get_theme_mod('homegallery_image3', get_bloginfo('template_url') .'/images/gallery/boxing-13.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php //echo get_theme_mod('homegallery_image3', get_bloginfo('template_url') .'/images/gallery/boxing-13.jpg'); ?>);">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
             <span class="icon-search"></span>
           </div>
         </a>
       </div>
       <div class="col-lg-3 col-md-6">
-        <a href="<?php echo get_theme_mod('homegallery_image4', get_bloginfo('template_url') .'/images/gallery/boxing-14.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php echo get_theme_mod('homegallery_image4', get_bloginfo('template_url') .'/images/gallery/boxing-14.jpg'); ?>);">
+        <a href="<?php //echo get_theme_mod('homegallery_image4', get_bloginfo('template_url') .'/images/gallery/boxing-14.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php //echo get_theme_mod('homegallery_image4', get_bloginfo('template_url') .'/images/gallery/boxing-14.jpg'); ?>);">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
             <span class="icon-search"></span>
           </div>
         </a>
       </div>      
-    </div>
+    </div> -->
+
   </div>
 </section>
 

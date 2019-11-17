@@ -91,17 +91,6 @@
                     </div> 
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
-                      <!-- <li class="active">
-                        <a href="index.html">Home</a>
-                      </li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="classes.html">Classes</a></li>
-                      <li><a href="index.html#schedule">Schedule</a></li>
-                      <li><a href="index.html#testimonials">Testimonials</a></li>
-                      <li><a href="gallery.html">Gallery</a></li>
-                      <li><a href="index.html#contact">Contact</a></li> -->
-                    
-
 
                     <?php
                     wp_nav_menu( array(
