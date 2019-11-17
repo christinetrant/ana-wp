@@ -1,3 +1,4 @@
+<?php /* Template Name: About */ ?>
 <?php get_header(); ?>
 
 <!-- ================= -->
@@ -50,7 +51,7 @@
           <li>Level 2 British sign language</li>
         </ul>
 
-        <p><a href="classes.html" class="btn btn-primary pill px-4">Classes</a></p>
+        <p><a href="localhost/wordpress/classes" class="btn btn-primary pill px-4">Classes</a></p>
       </div>
     </div>
   </div>

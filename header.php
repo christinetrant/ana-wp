@@ -78,7 +78,7 @@
             <div class="row align-items-center">
               <div class="col-2">
                 <h2 class="mb-0 site-logo">
-                  <a href="index.php" class="navbar-brand">
+                  <a href="localhost/wordpress/" class="navbar-brand">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="female boxing coach">
                   </a>
                 </h2>

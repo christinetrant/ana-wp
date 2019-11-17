@@ -65,33 +65,32 @@ function ana_widgets($id) {
 	// ));
 
 	//Classes left text widget
-	register_sidebar(array(
-		'name'	=> 'Class Section - Left',
-		'id'	=> 'class1',
-		'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
-		'after_widget'	=> '</div>',
-		'before_title'	=> '<p>',
-		'after_title'	=>	'</p>'
-	));
+	// register_sidebar(array(
+	// 	'name'	=> 'Class Section - Left',
+	// 	'id'	=> 'class1',
+	// 	'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
+	// 	'after_widget'	=> '</div>',
+	// 	'before_title'	=> '<p>',
+	// 	'after_title'	=>	'</p>'
+	// ));
 	//About Ana photo widget
-	register_sidebar(array(
-		'name'	=> 'Class Section - Middle',
-		'id'	=> 'class2',
-		'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
-		'after_widget'	=> '</div>',
-		'before_title'	=> '<img',
-		'after_title'	=>	'>'
-	));
+	// register_sidebar(array(
+	// 	'name'	=> 'Class Section - Middle',
+	// 	'id'	=> 'class2',
+	// 	'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
+	// 	'after_widget'	=> '</div>',
+	// 	'before_title'	=> '<img',
+	// 	'after_title'	=>	'>'
+	// ));
 	//Classes right text widget
-	register_sidebar(array(
-		'name'	=> 'Class Section - Right',
-		'id'	=> 'class3',
-		'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
-		'after_widget'	=> '</div>',
-		'before_title'	=> '<p>',
-		'after_title'	=>	'</p>'
-	));
-
+	// register_sidebar(array(
+	// 	'name'	=> 'Class Section - Right',
+	// 	'id'	=> 'class3',
+	// 	'before_widget'	=> '<div class="heading-with-border bg-white col-md-12 col-lg-4">',
+	// 	'after_widget'	=> '</div>',
+	// 	'before_title'	=> '<p>',
+	// 	'after_title'	=>	'</p>'
+	// ));
 
 	//Pill1 text widget
 	register_sidebar(array(
@@ -120,6 +119,19 @@ function ana_widgets($id) {
 		'before_title'	=> '<p>',
 		'after_title'	=>	'</p>'
 	));
+
+
+	//Contact Form
+	register_sidebar(array(
+		'name'	=> 'Contact Form',
+		'id'	=> 'contact',
+		'before_widget'	=> '<div class="d-md-flex">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '',
+		'after_title'	=>	''
+	));
+
+
 
 }
 add_action('widgets_init', 'ana_widgets');

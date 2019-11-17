@@ -9,13 +9,13 @@
           <div class="col-6 col-md-4 col-lg-4 mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4 text-primary">Quick Menu</h3>
             <ul class="list-unstyled">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="classes.html">Classes</a></li>
-              <li><a href="index.html#schedule">Schedule</a></li>
-              <li><a href="index.html#testimonials">Testimonials</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="localhost/wordpress/">Home</a></li>
+              <li><a href="localhost/wordpress/#about">About</a></li>
+              <li><a href="localhost/wordpress/classes">Classes</a></li>
+              <li><a href="localhost/wordpress/#schedule">Schedule</a></li>
+              <li><a href="localhost/wordpress/#testimonials">Testimonials</a></li>
+              <li><a href="localhost/wordpress/gallery">Gallery</a></li>
+              <li><a href="localhost/wordpress/#contact">Contact</a></li>
             </ul>
           </div>
         </div>

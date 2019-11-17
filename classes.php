@@ -1,3 +1,5 @@
+<?php /* Template Name: CLasses */ ?>
+
   <?php get_header(); ?>
 
   <!-- =================== -->
@@ -20,8 +22,10 @@
           </ul>
 
           <p class="mb-4">For more information or any queries please contact me and I'll be happy to help!</p>
-
-          <p><a href="/index.html#contact" class="btn btn-primary pill px-4">Contact Me</a></p>
+<!-- !!!!!!!!!!!!!!!!!!!!!! -->
+<!-- NEED TO CHANGE LINK!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!! -->
+          <p><a href="http://localhost/wordpress/#contact" class="btn btn-primary pill px-4">Contact Me</a></p>
         </div>
       </div>
 

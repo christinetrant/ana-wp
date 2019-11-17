@@ -108,7 +108,7 @@
           <div class="row-wrap">
             <div class="row bg-white p-4 align-items-center">
               <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5"></h3></div>
-              <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="classes.html" class="btn btn-primary pill px-4 mt-3 mt-md-0">More info</a></div>
+              <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="http://localhost/wordpress/classes" class="btn btn-primary pill px-4 mt-3 mt-md-0">More info</a></div>
               <div class="col-sm-4 col-md-4 col-lg-4"></div>
             </div>
           </div>
@@ -124,18 +124,21 @@
 
       <div class="container">
         <h1 class="mb-3 text-uppercase"><strong class="text-primary font-weight-bold">Testimonials</strong></h1>
+        <!-- Plugin link: http://localhost/wordpress/wp-admin/plugin-install.php?tab=plugin-information&plugin=strong-testimonials&TB_iframe=true&width=600&height=550 -->
+        <?php echo do_shortcode( '[testimonial_view id="1"]' ) ?>
+        
+        <!-- <div class="nonloop-block-14 owl-carousel"> -->
 
-        <div class="nonloop-block-14 owl-carousel">
+          <!-- <div class="d-flex block-testimony"> -->
 
-          <div class="d-flex block-testimony">
-            <div>
+            <!-- <div>
               <blockquote>&ldquo;
                 I Love every minute training with Ana. She brings all her energy and sense of fun to the sessions but knows how to push me hard and get me to work to my max. She’s helped me massively improve my boxing skills too, and always takes the time to make sure I’ve understood a drill before making me move on. She’s one of a kind and if you train with her you won’t ever look back! THANK YOU ANA
               &rdquo;</blockquote>
               <h2 class="h5">Liz Berry</h2>
-            </div>
-          </div>
-          <div class="d-flex block-testimony">
+            </div> -->
+          <!-- </div> -->
+          <!-- <div class="d-flex block-testimony">
             <div>
               <blockquote>&ldquo;
                 Ana&#39;s classes are addictive! They are perfect mix of fitness, laughter, and real good boxing. I feel satisfied and happy after each session and I know I always learn a lot. Ana&#39;s passion is hard to find, and you can really see her good vibes spreading through the class. You need to give it a go!
@@ -158,18 +161,18 @@
               &rdquo;</blockquote>
               <h2 class="h5">Elena Fernandez</h2>
             </div>
-          </div>
+          </div> -->
 
-          <div class="d-flex block-testimony">
+          <!-- <div class="d-flex block-testimony">
             <div>
               <blockquote>&ldquo;
                 Ana&#39;s boxing coaching has changed my life! I only started to spice up my regular gym routine, but with her original style of teaching and encouragment, I&#39;m hoping to fight next year #teamana #femaleboxingcoach all day everyday
               &rdquo;</blockquote>
               <h2 class="h5">Clarissa</h2>
             </div>
-          </div>
+          </div> -->
 
-        </div>
+        <!-- </div> -->
 
       </div>
       
@@ -231,7 +234,11 @@
         <h3 class="mb-3" id="contact">Contact</h3>
         <form action="#" class="appointment-form">
           
-          <div class="d-md-flex">
+
+          <?php if(is_active_sidebar('contact')) : ?>
+            <?php dynamic_sidebar('contact'); ?>
+          <?php endif; ?>
+          <!-- <div class="d-md-flex">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Name">
             </div>
@@ -253,7 +260,7 @@
             <div class="form-group ml-md-4">
               <input type="submit" value="Submit" class="btn btn-primary py-3 px-4">
             </div>
-          </div>
+          </div> -->
           
         </form>
       </div>          
