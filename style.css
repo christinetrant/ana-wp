@@ -1181,6 +1181,12 @@ a {
     margin-left: 15px;
     margin-right: 15px; }
     .block-schedule .row-wrap > .row {
+      display: flex;
+      /**/
+      /**/
+      /**/
+      /**/
+      /**/
       margin-bottom: 2px;
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
@@ -1405,9 +1411,11 @@ img, .gallery-img, .gal-img {
   padding: 20px !important; }
   @media (min-width: 768px) {
     .appointment {
-      padding: 7% 12% 7% 5% !important; } }
+      padding: 2% 5% 2% 5% !important; } }
   .appointment h3 {
     color: #fff; }
+
+label { width: 100%; }
 
 .appointment-form .form-group {
   position: relative;
@@ -1428,10 +1436,12 @@ img, .gallery-img, .gal-img {
     .appointment-form .form-group .select-wrap select, .appointment-form .form-group .input-wrap select {
       -webkit-appearance: none;
       -moz-appearance: none;
-      appearance: none; }
+      appearance: none;
+      padding-right: 10%; }
   .appointment-form .form-group .btn {
-    width: 100%;
-    display: block !important; }
+    margin: 0 auto;
+    display: block !important;
+   }
 
 .appointment-form .form-control {
   border: transparent !important;
@@ -1482,10 +1492,12 @@ img, .gallery-img, .gal-img {
 textarea.form-control {
   height: inherit !important; }
 
-
+/***************/
+/***   MAP   ***/
+/***************/
 #map {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  /*margin-left: 10%;*/
   border-radius: 5px;
 }
   #map.map {
@@ -1496,3 +1508,9 @@ textarea.form-control {
       height: 300px; 
     } 
   }
+
+tbody {
+  width: 100%;
+  justify-content: space-around;
+}
+td { width: 10%; }

@@ -18,7 +18,7 @@
       background-size: cover; 
     }
   </style>
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon-32x32.png">
@@ -109,13 +109,11 @@
                   </div>
                 </nav>    
 
-                
-
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
   </div>

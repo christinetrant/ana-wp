@@ -73,37 +73,15 @@
         <h1 id="schedule" class="mb-3 text-uppercase"><strong class="text-white font-weight-bold">Schedule</strong></h1>
 
         <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-sunday" role="tabpanel">
-          </div>
+          <div class="tab-pane fade show active" id="pills-sunday" role="tabpanel"></div>
+        </div>
           <!-- Row 1 -->
           <div class="row-wrap">
-            <div class="row bg-white p-4 align-items-center">
-              <!-- <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5">Boxing Babes</h3></div> -->
-              <?php if(is_active_sidebar('pill1a')) : ?>
-                <?php dynamic_sidebar('pill1a'); ?>
-              <?php endif; ?>
-
-              <!-- <div class="col-sm-4 col-md-4 col-lg-4"><p><span class="icon-clock-o mr-3"></span>10:00am - 11:00am</p></div> -->
-              <?php if(is_active_sidebar('pill1b')) : ?>
-                <?php dynamic_sidebar('pill1b'); ?>
-              <?php endif; ?>
-              
-              <!-- <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-calendar mr-3"></span>2nd & 4th Saturday of each month</div> -->
-              <?php if(is_active_sidebar('pill1c')) : ?>
-                <?php dynamic_sidebar('pill1c'); ?>
-              <?php endif; ?>
-                 
-            </div>
+            <?php if(is_active_sidebar('pill')) : ?>
+              <?php dynamic_sidebar('pill'); ?>
+            <?php endif; ?> 
           </div>
-          <!-- Row 2 -->
           
-          <!-- <div class="row-wrap">
-            <div class="row bg-white p-4 align-items-center">
-              <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5">BoomBox</h3></div>
-              <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-clock-o mr-3"></span>7pm-8pm</div>
-              <div class="col-sm-4 col-md-4 col-lg-4"><span class="icon-calendar mr-3"></span> Tuesdays</div>
-            </div>
-          </div> -->
           <!-- Button -->
           <div class="row-wrap">
             <div class="row bg-white p-4 align-items-center">
@@ -113,67 +91,17 @@
             </div>
           </div>
 
-          </div>
-        </div>
+        </div> <!-- End Container -->
       </div>
 
     <!-- ======================== -->
     <!-- ===   TESTIMONIALS   === -->
     <!-- ======================== -->
     <div id="testimonials" class="site-section block-14">
-
       <div class="container">
         <h1 class="mb-3 text-uppercase"><strong class="text-primary font-weight-bold">Testimonials</strong></h1>
         <!-- Plugin link: https://wordpress.org/plugins/strong-testimonials/ -->
         <?php echo do_shortcode( '[testimonial_view id="1"]' ) ?>
-        
-        <!-- <div class="nonloop-block-14 owl-carousel"> -->
-
-          <!-- <div class="d-flex block-testimony"> -->
-
-            <!-- <div>
-              <blockquote>&ldquo;
-                I Love every minute training with Ana. She brings all her energy and sense of fun to the sessions but knows how to push me hard and get me to work to my max. She’s helped me massively improve my boxing skills too, and always takes the time to make sure I’ve understood a drill before making me move on. She’s one of a kind and if you train with her you won’t ever look back! THANK YOU ANA
-              &rdquo;</blockquote>
-              <h2 class="h5">Liz Berry</h2>
-            </div> -->
-          <!-- </div> -->
-          <!-- <div class="d-flex block-testimony">
-            <div>
-              <blockquote>&ldquo;
-                Ana&#39;s classes are addictive! They are perfect mix of fitness, laughter, and real good boxing. I feel satisfied and happy after each session and I know I always learn a lot. Ana&#39;s passion is hard to find, and you can really see her good vibes spreading through the class. You need to give it a go!
-              &rdquo;</blockquote>
-              <h2 class="h5">Michela Del Buono</h2>
-            </div>
-          </div>
-          <div class="d-flex block-testimony">
-            <div>
-              <blockquote>&ldquo;
-                Wow.. where do I start.. Ana is one of the most motivational, funny, talented and inspiring women I have ever met...  The boxing classes have helped me so much mentally to feel better in myself and more positive in life, but also are such a great laugh and a routine now which I so much look forward to going to.  I feel much fitter and stronger and although ana pushes us all to our limit and makes us push through the pain we all feel physically so much better for the work out.. I couldn&#39;t recommend this enough to all women, whether you want to get fit or tone up or just feel motivated and have a really good workout and meet some great people and a giggle.
-              &rdquo;</blockquote>
-              <h2 class="h5">Karen Bryant</h2>
-            </div>
-          </div>
-          <div class="d-flex block-testimony">
-            <div>
-              <blockquote>&ldquo;
-                I started boxing a couple of years ago and Ana has been part of that journey. Her passion, charisma and positive attitude makes you feel like you can achieve anything you want. When she’s coaching she makes you feel included and welcome, and she doesn’t just work out your body, but also your mind. Ana’s one of the reasons why I&#39;m still boxing today!
-              &rdquo;</blockquote>
-              <h2 class="h5">Elena Fernandez</h2>
-            </div>
-          </div> -->
-
-          <!-- <div class="d-flex block-testimony">
-            <div>
-              <blockquote>&ldquo;
-                Ana&#39;s boxing coaching has changed my life! I only started to spice up my regular gym routine, but with her original style of teaching and encouragment, I&#39;m hoping to fight next year #teamana #femaleboxingcoach all day everyday
-              &rdquo;</blockquote>
-              <h2 class="h5">Clarissa</h2>
-            </div>
-          </div> -->
-
-        <!-- </div> -->
-
       </div>
       
     </div>
@@ -186,51 +114,17 @@
     <h1 class="mb-3 text-uppercase"><strong class="text-white font-weight-bold">Gallery</strong></h1>
     <!-- Plugin link: https://wordpress.org/plugins/wp-bootstrap-gallery/ -->
     <div class="row no-gutters">
-
-    <!-- <?php //echo do_shortcode( '[wpbgallery id=125]' ) ?> -->
-    <?php echo do_shortcode( '[foogallery id="126"]' ) ?>
-  </div>
-
-    <!-- <div class="row no-gutters">
-      <div class="col-lg-3 col-md-6">
-        <a href="<?php //echo get_theme_mod('homegallery_image1', get_bloginfo('template_url') .'/images/gallery/boxing-9.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php //echo get_theme_mod('homegallery_image1', get_bloginfo('template_url') .'/images/gallery/boxing-9.jpg'); ?>);">
-          <div class="icon mb-4 d-flex align-items-center justify-content-center">
-            <span class="icon-search"></span>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <a href="<?php //echo get_theme_mod('homegallery_image2', get_bloginfo('template_url') .'/images/gallery/boxing-8.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php //echo get_theme_mod('homegallery_image2', get_bloginfo('template_url') .'/images/gallery/boxing-8.jpg'); ?>);">
-          <div class="icon mb-4 d-flex align-items-center justify-content-center">
-            <span class="icon-search"></span>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <a href="<?php //echo get_theme_mod('homegallery_image3', get_bloginfo('template_url') .'/images/gallery/boxing-13.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php //echo get_theme_mod('homegallery_image3', get_bloginfo('template_url') .'/images/gallery/boxing-13.jpg'); ?>);">
-          <div class="icon mb-4 d-flex align-items-center justify-content-center">
-            <span class="icon-search"></span>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <a href="<?php //echo get_theme_mod('homegallery_image4', get_bloginfo('template_url') .'/images/gallery/boxing-14.jpg'); ?>" class="gallery image-popup gallery-img d-flex align-items-center" style="background-image: url(<?php //echo get_theme_mod('homegallery_image4', get_bloginfo('template_url') .'/images/gallery/boxing-14.jpg'); ?>);">
-          <div class="icon mb-4 d-flex align-items-center justify-content-center">
-            <span class="icon-search"></span>
-          </div>
-        </a>
-      </div>      
-    </div> -->
-
+      <!-- <?php //echo do_shortcode( '[foogallery id="126"]' ) ?> -->
+      <?php echo do_shortcode( '[foogallery id="50"]' ) ?>
+    </div>
   </div>
 </section>
 
 <!-- ======================== -->
 <!-- ===     CONTACT      === -->
 <!-- ======================== -->  
-<section class="ftco-appointment site-section">
-  <div class="overlay"></div>
-  <div class="container-wrap">
+<section class="ftco-appointment site-section block-14">
+  <div class="container">
     <div class="row no-gutters d-md-flex align-items-center">  
       <!-- GOOGLE MAP -->
       <div class="col-md-6 d-flex align-self-stretch">
@@ -241,35 +135,8 @@
       <div class="col-md-6 appointment ftco-animate">
         <h3 class="mb-3" id="contact">Contact</h3>
         <form action="#" class="appointment-form">
-          
-
-          <?php if(is_active_sidebar('contact')) : ?>
-            <?php dynamic_sidebar('contact'); ?>
-          <?php endif; ?>
-          <!-- <div class="d-md-flex">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Name">
-            </div>
-          </div>
-          
-          <div class="d-md-flex">    
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-          </div>
-
-          <div class="d-md-flex">
-            <div class="form-group">
-              <textarea name="message" id="msg" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-            </div>
-          </div>
-          
-          <div class="d-md-flex">
-            <div class="form-group ml-md-4">
-              <input type="submit" value="Submit" class="btn btn-primary py-3 px-4">
-            </div>
-          </div> -->
-          
+          <!-- <?php //echo do_shortcode('[contact-form-7 id="84" title="Contact form 1"]'); ?> -->
+          <?php echo do_shortcode('[contact-form-7 id="44" title="Contact form 1"]'); ?>
         </form>
       </div>          
     </div>

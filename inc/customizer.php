@@ -265,10 +265,6 @@
         'priority'  => 1
     ));
    
-
-
-
-  
   }
   add_action('customize_register', 'ana_customize_register');
 
