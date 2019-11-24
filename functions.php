@@ -53,7 +53,7 @@ add_action('wp_enqueue_scripts', 'ana_theme_js');
 
 //Widget Locations
 function ana_widgets($id) {
-	//Pill text widget
+	// Schedule widget
 	register_sidebar(array(
 		'name'	=> 'Schedule',
 		'id'	=> 'pill',
@@ -61,16 +61,6 @@ function ana_widgets($id) {
 		'after_widget'	=> '</table>',
 		'before_title'	=> '<td>',
 		'after_title'	=>	'</td>'
-	));
-
-	//Contact Form
-	register_sidebar(array(
-		'name'	=> 'Contact Form',
-		'id'	=> 'contact',
-		'before_widget'	=> '<div class="d-md-flex">',
-		'after_widget'	=> '</div>',
-		'before_title'	=> '',
-		'after_title'	=>	''
 	));
 
 }
