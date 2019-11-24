@@ -22,17 +22,11 @@
           <div class="col-md-12 col-lg-5 mb-5 mb-lg-0">
             <h1 class="mb-3 text-uppercase"><strong class="text-primary font-weight-bold">About Ana</strong></h1>
             <p class="mb-4"><?php echo get_theme_mod('about_text', 'I am a passionate and dedicated level 2 England boxing coach, level 3 personal trainer &amp; qualified in level 2 British Sign Language (BSL).  LGBT women &amp; deaf clients are welcome. I am a coach who smashes barriers and believes that inclusion is key.'); ?></p>
-            <!--  <?php //if(is_active_sidebar('about')) : ?>
-              <?php //dynamic_sidebar('about'); ?>
-            <?php //endif; ?> -->
 
             <p><a href="<?php echo get_theme_mod('about_btn', 'http://google.com'); ?>" class="btn btn-primary pill px-4"><?php echo get_theme_mod('about_btn_text', 'Find Out More'); ?></a></p> 
           </div>
           <div class="col-md-12 col-lg-6 ml-auto">
             <img src="<?php echo get_theme_mod('about_image', get_bloginfo('template_url') .'/images/gallery/boxing-12.jpg'); ?>" alt="Image" class="img-fluid">
-            <!-- <?php //if(is_active_sidebar('about_photo')) : ?>
-              <?php //dynamic_sidebar('about_photo'); ?>
-            <?php //endif; ?> -->
           </div>
         </div>
       </div>
@@ -58,7 +52,7 @@
           <div class="heading-with-border bg-white col-md-12 col-lg-4">
             <p class="lead"><?php echo get_theme_mod('featured_right_heading', 'Boom Box'); ?></p>
             <p class="mb-4"><?php echo get_theme_mod('featured_right_text', 'Recreational boxing for women of all sizes, abilities and fitness levels. A full body workout which includes defences, combinations, footwork and partner work with pads whilst getting fit. At these sessions you get to learn the ropes of boxing and have fun whilst you exercise.<br>Please bring your own gloves if you have, limited pairs available.'); ?></p>
-            <p><a href="<?php echo get_theme_mod('featured_btn', 'http://google.com'); ?>" class="btn btn-primary pill px-4"><?php echo get_theme_mod('featured_btn_text', 'More Classes'); ?></a></p>
+            <p><a href="<?php echo get_theme_mod('featured_btn', 'http://www.femaleboxingcoach.com/classes'); ?>" class="btn btn-primary pill px-4"><?php echo get_theme_mod('featured_btn_text', 'More Classes'); ?></a></p>
           </div>
         </div>
       </div>
@@ -86,7 +80,7 @@
           <div class="row-wrap">
             <div class="row bg-white p-4 align-items-center">
               <div class="col-sm-4 col-md-4 col-lg-4"><h3 class="h5"></h3></div>
-              <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="http://localhost/wordpress/classes" class="btn btn-primary pill px-4 mt-3 mt-md-0">More info</a></div>
+              <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="http://www.femaleboxingcoach.com//classes" class="btn btn-primary pill px-4 mt-3 mt-md-0">More info</a></div>
               <div class="col-sm-4 col-md-4 col-lg-4"></div>
             </div>
           </div>

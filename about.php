@@ -51,7 +51,7 @@
           <li>Level 2 British sign language</li>
         </ul>
 
-        <p><a href="localhost/wordpress/classes" class="btn btn-primary pill px-4">Classes</a></p>
+        <p><a href="http://www.femaleboxingcoach.com/classes/" class="btn btn-primary pill px-4">Classes</a></p>
       </div>
     </div>
   </div>

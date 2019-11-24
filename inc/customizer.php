@@ -66,7 +66,7 @@
 
     //   ABOUT BUTTON   //
     $wp_customize->add_setting('about_btn', array(
-    	'default'	=> _x('http://google.co.uk', 'wpbootstrap'),
+    	'default'	=> _x('http://www.femaleboxingcoach.com/about/', 'wpbootstrap'),
     	'type'		=> 'theme_mod'
     ));
     $wp_customize->add_control('about_btn', array(
@@ -166,7 +166,7 @@
 
     //   FEATURED CLASSES BUTTON   //
     $wp_customize->add_setting('featured_btn', array(
-    	'default'	=> _x('http://google.co.uk', 'wpbootstrap'),
+    	'default'	=> _x('http://www.femaleboxingcoach.com/classes/', 'wpbootstrap'),
     	'type'		=> 'theme_mod'
     ));
     $wp_customize->add_control('featured_btn', array(

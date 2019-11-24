@@ -9,13 +9,13 @@
           <div class="col-6 col-md-4 col-lg-4 mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4 text-primary">Quick Menu</h3>
             <ul class="list-unstyled">
-              <li><a href="localhost/wordpress/">Home</a></li>
-              <li><a href="localhost/wordpress/#about">About</a></li>
-              <li><a href="localhost/wordpress/classes">Classes</a></li>
-              <li><a href="localhost/wordpress/#schedule">Schedule</a></li>
-              <li><a href="localhost/wordpress/#testimonials">Testimonials</a></li>
-              <li><a href="localhost/wordpress/gallery">Gallery</a></li>
-              <li><a href="localhost/wordpress/#contact">Contact</a></li>
+              <li><a href="http://www.femaleboxingcoach.com/">Home</a></li>
+              <li><a href="http://www.femaleboxingcoach.com/#about">About</a></li>
+              <li><a href="http://www.femaleboxingcoach.com/classes/">Classes</a></li>
+              <li><a href="http://www.femaleboxingcoach.com//#schedule">Schedule</a></li>
+              <li><a href="http://www.femaleboxingcoach.com/#testimonials">Testimonials</a></li>
+              <li><a href="http://www.femaleboxingcoach.com/gallery">Gallery</a></li>
+              <li><a href="http://www.femaleboxingcoach.com/#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -50,21 +50,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-<!-- <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script src="js/aos.js"></script> 
-<script src="js/google-map.js"></script>
-<script src="js/main.js"></script>
-
--->
   
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 
