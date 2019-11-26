@@ -61,19 +61,20 @@
     $wp_customize->add_control('about_text', array(
     	'label'		=> __('About text', 'wpbootstrap'),
     	'section'	=> 'about',
+        'type'       => 'textarea',
     	'priority'	=> 1
     ));
 
     //   ABOUT BUTTON   //
-    $wp_customize->add_setting('about_btn', array(
-    	'default'	=> _x('http://www.femaleboxingcoach.com/about/', 'wpbootstrap'),
-    	'type'		=> 'theme_mod'
-    ));
-    $wp_customize->add_control('about_btn', array(
-    	'label'		=> __('About button', 'wpbootstrap'),
-    	'section'	=> 'about',
-    	'priority'	=> 4
-    ));
+    // $wp_customize->add_setting('about_btn', array(
+    // 	'default'	=> _x('http://www.femaleboxingcoach.com/about/', 'wpbootstrap'),
+    // 	'type'		=> 'theme_mod'
+    // ));
+    // $wp_customize->add_control('about_btn', array(
+    // 	'label'		=> __('About button', 'wpbootstrap'),
+    // 	'section'	=> 'about',
+    // 	'priority'	=> 4
+    // ));
 
     //   ABOUT BUTTON TEXT   //
     $wp_customize->add_setting('about_btn_text', array(
@@ -127,6 +128,7 @@
     $wp_customize->add_control('featured_left_text', array(
     	'label'		=> __('Left Text', 'wpbootstrap'),
     	'section'	=> 'featured',
+        'type'       => 'textarea',
     	'priority'	=> 2
     ));
 
@@ -156,24 +158,25 @@
     //   FEATURED CLASSES RIGHT TEXT   //
 	$wp_customize->add_setting('featured_right_text', array(
     	'default'	=> _x('Recreational boxing for women of all sizes, abilities and fitness levels. A full body workout which includes defences, combinations, footwork and partner work with pads whilst getting fit. At these sessions you get to learn the ropes of boxing and have fun whilst you exercise.<br>Please bring your own gloves if you have, limited pairs available.', 'wpbootstrap'),
-    	'type'		=> 'theme_mod'
+    	'type'		=> 'theme_mod',
     ));
     $wp_customize->add_control('featured_right_text', array(
     	'label'		=> __('Right Text', 'wpbootstrap'),
     	'section'	=> 'featured',
+        'type'       => 'textarea',
     	'priority'	=> 5
     ));
 
     //   FEATURED CLASSES BUTTON   //
-    $wp_customize->add_setting('featured_btn', array(
-    	'default'	=> _x('http://www.femaleboxingcoach.com/classes/', 'wpbootstrap'),
-    	'type'		=> 'theme_mod'
-    ));
-    $wp_customize->add_control('featured_btn', array(
-    	'label'		=> __('Featured button', 'wpbootstrap'),
-    	'section'	=> 'featured',
-    	'priority'	=> 6
-    ));
+    // $wp_customize->add_setting('featured_btn', array(
+    // 	'default'	=> _x('http://www.femaleboxingcoach.com/classes/', 'wpbootstrap'),
+    // 	'type'		=> 'theme_mod'
+    // ));
+    // $wp_customize->add_control('featured_btn', array(
+    // 	'label'		=> __('Featured button', 'wpbootstrap'),
+    // 	'section'	=> 'featured',
+    // 	'priority'	=> 6
+    // ));
 
     //   FEATURED CLASSES BUTTON TEXT   //
 	$wp_customize->add_setting('featured_btn_text', array(
