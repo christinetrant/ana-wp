@@ -1,7 +1,7 @@
 # Female Boxing Coach Wordpress Theme
 
 Adapting bootstrap ana website into a wordpress theme for client.
-Used widgets, customiser and blog posts to enable client to edit text & images while keeping the layout & design entact.
+Used widgets, customiser, blog posts and plugins to enable client to edit text & images while keeping the layout & design entact.
 
 [Live Site][2]
 
